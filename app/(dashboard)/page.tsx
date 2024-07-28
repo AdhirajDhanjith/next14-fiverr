@@ -1,7 +1,7 @@
 "use client";
 
 import { useConvexAuth, useMutation } from "convex/react";
-//import { GigList } from "./_components/gig-list";
+import { GigList } from "./_components/gig-list";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 import { Id } from "@/convex/_generated/dataModel";
@@ -27,9 +27,10 @@ const Dashboard = ({
         storeUser();
     }, [store])
     return (
-      //  <GigList
-       //     query={searchParams}
-       // />
+        //<GigList
+          //  query={searchParams}
+        // />
+        <div>Hi</div>
     );
 };
 
